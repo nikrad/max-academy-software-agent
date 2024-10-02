@@ -1,0 +1,266 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #333;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#hero .signup-free {
+    padding: 15px 30px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero .signup-free:hover {
+    background-color: #e03e00;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('abstract-shapes.png');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+#image {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.smartphone {
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.smartphone1 {
+    left: 50%;
+    transform: translateX(-60%) translateY(10%);
+    z-index: 2;
+}
+
+.smartphone2 {
+    left: 50%;
+    transform: translateX(-40%) translateY(-10%);
+    z-index: 1;
+}
+
+#how-it-works {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step p {
+    font-size: 16px;
+    color: #666;
+}
+
+.start-jiving {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-jiving:hover {
+    background-color: #e03e00;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff4500;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+/* Additional styling for consistent typography, colors, and spacing */
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+}
+
+p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #555;
+}
+
+button {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Consistent spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* Consistent colors */
+a {
+    color: #ff4500;
+}
+
+a:hover {
+    color: #e03e00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .smartphone {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    nav button {
+        padding: 8px 16px;
+    }
+
+    .smartphone {
+        width: 120px;
+    }
+}
