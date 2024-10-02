@@ -156,7 +156,9 @@ class Agent:
                         )
 
             if is_file_update:
-                dprint(f"Executing {self.name} with post-updateArtifact() chat history")
+                dprint(
+                    f"{self.name} is calling chat completion after updateArtifact() call(s)"
+                )
                 copied_message_history = message_history.copy()
                 copied_message_history.append(
                     {
